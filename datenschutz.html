@@ -3,44 +3,77 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Datenschutzerklärung – Hangover Heroes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body{margin:0;font-family:Poppins,system-ui;-webkit-font-smoothing:antialiased;color:#e7eef7;background:#0c1218}
-    main{width:min(900px,92%);margin:48px auto}
-    h1{margin:0 0 10px} section{background:#121a24;border:1px solid #1a2230;border-radius:16px;padding:20px;margin:16px 0}
-    a{color:#39ff88}
-    .site-header{position:sticky;top:0;padding:14px 4%;background:#0b0f14cc;border-bottom:1px solid #111722}
-    .site-header a{color:#e7eef7;text-decoration:none}
-    footer{border-top:1px solid #111722;padding:28px 4%;text-align:center;color:#a9b7c6}
+    :root{--bg:#0b0f14;--card:#121820;--text:#e7eef7;--muted:#a9b7c6;--primary:#39ff88;--primary-10:#39ff881a}
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto;background:linear-gradient(180deg,#0b0f14 0%, #0e141b 100%);color:var(--text);line-height:1.6}
+    .container{width:min(1000px,92%);margin-inline:auto;padding:40px 0}
+    h1,h2{color:var(--primary)} h1{margin-bottom:24px}
+    a{color:var(--primary)} a:hover{text-decoration:underline}
+    .site-header{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:14px 4%;background:#0b0f14cc;border-bottom:1px solid #111722}
+    .logo{display:flex;align-items:center;gap:.6rem;font-weight:600;color:var(--text)}.logo svg{width:28px;height:28px}.logo strong{color:var(--primary)}
+    .nav{display:flex;gap:1rem}.nav a{padding:8px 12px;border-radius:10px;color:#e7eef7}.nav a.active{background:var(--primary-10)}
+    .site-footer{border-top:1px solid #111722;padding:28px 4%;text-align:center;color:#a9b7c6}
+    .foot-links{margin-top:6px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
   </style>
+  <script>document.addEventListener('DOMContentLoaded',()=>{var y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear()});</script>
 </head>
 <body>
-  <header class="site-header"><a href="index.html">← Zurück zur Startseite</a></header>
-  <main>
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#39ff88"/><stop offset="1" stop-color="#1aff66"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#0e141b"/><path d="M14 42h24a8 8 0 0 0 8-8v-2" stroke="url(#g)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M12 34c10-10 30-10 40 0" stroke="url(#g)" stroke-width="4" fill="none" stroke-linecap="round" opacity=".7"/><circle cx="48" cy="16" r="4" fill="#39ff88"/></svg>
+      <span>Hangover <strong>Heroes</strong></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Start</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="preise.html">Preise</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main class="container">
     <h1>Datenschutzerklärung</h1>
-    <section>
-      <p><strong>Verantwortlich:</strong> Robert Schaefer, Terje Schulte · E-Mail: <a href="mailto:hangover-heroes@web.de">hangover-heroes@web.de</a></p>
-      <p>Wir verarbeiten personenbezogene Daten ausschließlich zum Zweck der Kontaktaufnahme und Angebotserstellung.</p>
-    </section>
-    <section>
-      <h2>Kontakt per Formular/E-Mail</h2>
-      <p>Bei Kontaktaufnahme verarbeiten wir die von dir übermittelten Daten (z. B. Name, E-Mail, Inhalte) zur Bearbeitung der Anfrage (Art. 6 Abs. 1 lit. b DSGVO). Die Daten werden nicht an Dritte weitergegeben und nach Abschluss der Kommunikation bzw. Ablauf gesetzlicher Aufbewahrungspflichten gelöscht.</p>
-    </section>
-    <section>
-      <h2>Instagram</h2>
-      <p>Beim Aufruf unseres Instagram-Profils gelten die <em>Datenschutzbestimmungen von Instagram</em>. Auf unserer Website verlinken wir lediglich dorthin; es werden hier keine Instagram-Plugins geladen.</p>
-    </section>
-    <section>
-      <h2>Schriftarten & Hosting</h2>
-      <p>Diese Seite lädt Schriftarten über Google Fonts. Dabei können technisch notwendige Verbindungen zu Servern von Google (USA) entstehen. Grundlage ist unser berechtigtes Interesse an einer einheitlichen Darstellung (Art. 6 Abs. 1 lit. f DSGVO). Die Seite wird auf GitHub Pages gehostet; es können dabei Zugriffsdaten (z. B. IP-Adresse, Zeit, URL) in Server-Logs verarbeitet werden.</p>
-    </section>
-    <section>
-      <h2>Rechte der betroffenen Personen</h2>
-      <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit sowie das Recht auf Beschwerde bei einer Aufsichtsbehörde. Kontakt: <a href="mailto:hangover-heroes@web.de">hangover-heroes@web.de</a></p>
-    </section>
+
+    <h2>1. Verantwortliche Stelle</h2>
+    <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+    <p><strong>Hangover Heroes</strong><br>
+    Inhaber: Robert Schaefer & Terje Schulte<br>
+    E-Mail: <a href="mailto:hangover-heroes@web.de">hangover-heroes@web.de</a></p>
+
+    <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
+    <p>Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Nutzung dieser Website ist in der Regel ohne Angabe personenbezogener Daten möglich.</p>
+
+    <h2>3. Server-Logfiles</h2>
+    <p>Beim Aufruf unserer Website über GitHub Pages werden automatisch Daten erhoben (z. B. IP-Adresse, Browsertyp, Betriebssystem, Zeitpunkt des Zugriffs). Diese Daten dienen ausschließlich der technischen Bereitstellung und werden von GitHub nach deren Datenschutzbestimmungen verarbeitet.</p>
+
+    <h2>4. Kontaktaufnahme per E-Mail oder Formular</h2>
+    <p>Wenn Sie uns per E-Mail oder über das Kontaktformular kontaktieren, werden die angegebenen Daten (Name, E-Mail-Adresse, Nachricht usw.) verarbeitet, um Ihre Anfrage zu bearbeiten.</p>
+
+    <p><strong>Formularversand über Formsubmit.io:</strong><br>
+    Für die Verarbeitung des Kontaktformulars nutzen wir den Dienst <a href="https://formsubmit.io" target="_blank" rel="noopener">Formsubmit.io</a>. Beim Absenden des Formulars werden Ihre Angaben an Formsubmit.io übermittelt, um uns per E-Mail zugestellt zu werden. Die Daten werden dort nicht dauerhaft gespeichert. Eine Speicherung erfolgt ausschließlich in unserem Posteingang.</p>
+
+    <p>Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung/Anfrage) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Kommunikation).</p>
+
+    <h2>5. Verwendung von Schriftarten</h2>
+    <p>Diese Website verwendet Google Fonts, bereitgestellt von Google Ireland Ltd. Beim Aufruf werden Schriftarten über Server von Google geladen. Dabei können Daten (z. B. IP-Adresse) an Google übermittelt werden. Weitere Informationen finden Sie unter <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+
+    <h2>6. Ihre Rechte</h2>
+    <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Hierzu sowie zu weiteren Fragen zum Datenschutz können Sie sich jederzeit an uns wenden:</p>
+    <p><a href="mailto:hangover-heroes@web.de">hangover-heroes@web.de</a></p>
+
+    <h2>7. Aktualität und Änderung</h2>
+    <p>Diese Datenschutzerklärung ist aktuell gültig und wurde zuletzt am <strong>November 2025</strong> angepasst.</p>
   </main>
-  <footer>© <span id="year"></span> Hangover Heroes · <a href="impressum.html">Impressum</a></footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Hangover Heroes</p>
+    <div class="foot-links">
+      <a href="impressum.html">Impressum</a> · <a href="mailto:hangover-heroes@web.de">hangover-heroes@web.de</a>
+    </div>
+  </footer>
 </body>
 </html>
