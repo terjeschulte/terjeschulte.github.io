@@ -1,74 +1,75 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hangover Heroes – Event Clean-Up nach Feiern & Events</title>
-  <meta name="description" content="Du hast gefeiert – wir kümmern uns um den Rest. Hangover Heroes: Clean-Up nach Feiern & Events. Schnell, zuverlässig, diskret." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hangover Heroes – Event Clean-Up</title>
+  <meta name="description" content="Hangover Heroes: Reinigungsservice nach Feiern & Events. Schnell, zuverlässig, diskret.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='#39ff88'/><stop offset='1' stop-color='#1aff66'/></linearGradient></defs><rect width='64' height='64' rx='14' fill='#0e141b'/><path d='M14 42h24a8 8 0 0 0 8-8v-2' stroke='url(#g)' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M12 34c10-10 30-10 40 0' stroke='url(#g)' stroke-width='4' fill='none' stroke-linecap='round' opacity='.7'/><circle cx='48' cy='16' r='4' fill='#39ff88'/></svg>">
   <style>
     :root{
-      --bg:#0c1218; --bg2:#0f1822; --card:#121a24; --text:#e7eef7; --muted:#a9b7c6;
+      --bg:#0b0f14; --card:#121820; --text:#e7eef7; --muted:#a9b7c6;
       --primary:#39ff88; --primary-10:#39ff881a; --ring:#39ff88;
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0}
     body{
       font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto;
-      background: radial-gradient(1000px 500px at 20% -20%, #39ff8812, transparent 60%), linear-gradient(180deg,var(--bg) 0%, var(--bg2) 100%);
+      background:linear-gradient(180deg,#0b0f14 0%, #0e141b 100%);
       color:var(--text); line-height:1.6;
     }
     a{color:var(--primary);text-decoration:none}
     a:hover{text-decoration:underline}
     .container{width:min(1100px,92%);margin-inline:auto}
+
     .site-header{
       position:sticky; top:0; z-index:20;
-      display:flex; align-items:center; justify-content:space-between; gap:1rem;
-      padding:14px 4%; background:#0b0f14cc; backdrop-filter: blur(6px); border-bottom:1px solid #111722;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:1rem; padding:14px 4%;
+      background:#0b0f14cc; backdrop-filter: blur(6px);
+      border-bottom:1px solid #111722;
     }
     .logo{display:flex; align-items:center; gap:.6rem; font-weight:600; color:var(--text)}
-    .logo svg{width:28px;height:28px; transform-origin:center; animation:pop .7s ease both}
-    @keyframes pop{0%{transform:scale(.8);opacity:0}100%{transform:scale(1);opacity:1}}
+    .logo svg{width:28px;height:28px}
     .logo strong{color:var(--primary)}
     .nav{display:flex; gap:1rem; align-items:center}
     .nav a{padding:8px 12px; border-radius:10px; color:var(--text)}
     .nav a.active{background:var(--primary-10)}
     .btn{
       display:inline-block; padding:12px 18px; border-radius:12px; border:1px solid #1f2a36;
-      font-weight:600; text-decoration:none; transition:transform .18s ease, box-shadow .18s ease;
+      font-weight:600; text-decoration:none; transition:.2s; cursor:pointer;
     }
-    .btn:hover{transform:translateY(-1px); box-shadow:0 10px 24px #0005}
+    .btn:hover{transform:translateY(-1px)}
     .btn-primary{background:var(--primary); color:#0b0f14; border-color:transparent}
     .btn-ghost{background:transparent; color:var(--text); border-color:#243042}
+
     .hero{
-      padding:84px 4% 40px;
+      padding:80px 4% 40px;
       border-bottom:1px solid #111722;
     }
-    .hero-content{width:min(1100px,92%);margin:auto}
-    .eyebrow{display:inline-block; font-weight:600; letter-spacing:.06em; color:#cfe6d8; background:var(--primary-10); padding:6px 10px; border-radius:999px; margin-bottom:10px}
-    h1{font-size:clamp(34px,6vw,58px); line-height:1.08; margin:0 0 12px}
-    .lead{font-size:clamp(16px,2.4vw,20px); color:var(--muted); max-width:720px}
+    .hero-content{width:min(1100px,92%);margin:auto;text-align:left}
+    .hero h1{font-size:clamp(32px,6vw,56px); line-height:1.1; margin:0 0 12px}
+    .lead{font-size:clamp(16px,2.6vw,20px); color:var(--muted); max-width:720px}
     .actions{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap}
     .badges{display:flex; gap:16px; list-style:none; padding:0; margin:18px 0 0; color:#cfe6d8; flex-wrap:wrap}
-    section{padding:44px 0}
+
+    section{padding:42px 0}
     .cards{display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
     .card{
-      background:var(--card); border:1px solid #1a2230; border-radius:16px; padding:20px; box-shadow:0 8px 20px #00000055;
-      opacity:0; transform:translateY(8px); transition:opacity .5s ease, transform .5s ease;
+      background:var(--card); border:1px solid #1a2230; border-radius:16px;
+      padding:20px; box-shadow:0 8px 20px #0008;
     }
-    .reveal{opacity:1; transform:translateY(0)}
+    .cta-center{display:flex; justify-content:center; margin-top:16px}
+
     .site-footer{border-top:1px solid #111722; padding:28px 4%; text-align:center; color:var(--muted)}
     .foot-links{margin-top:6px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
   </style>
   <script>
-    // Fade-in beim Scrollen
-    document.addEventListener('DOMContentLoaded', function(){
-      const io = new IntersectionObserver((entries)=>entries.forEach(e=>e.isIntersecting && e.target.classList.add('reveal')), {threshold:.12});
-      document.querySelectorAll('.card').forEach(el=>io.observe(el));
-      const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded',function(){
+      var y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
     });
   </script>
 </head>
@@ -82,22 +83,24 @@
       <a href="index.html" class="active">Start</a>
       <a href="ueber-uns.html">Über uns</a>
       <a href="preise.html">Preise</a>
-      <a href="kontakt.html" class="btn btn-primary">Unverbindlich anfragen</a>
+      <a href="kontakt.html" class="btn btn-primary">Kontakt</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-content">
-        <span class="eyebrow">Event Clean-Up</span>
-        <h1>Du hast gefeiert – wir kümmern uns um den Rest.</h1>
-        <p class="lead">Schnell, zuverlässig, diskret. Für WG-Partys, Gartenfeste, Vereins- & Schul-Events – innen & außen.</p>
+        <h1>Wir räumen die Nacht weg.</h1>
+        <p class="lead"><strong>Event Clean-Up</strong> nach Feiern, Partys & Veranstaltungen – schnell, zuverlässig, diskret.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="kontakt.html">Jetzt Anfrage senden</a>
-          <a class="btn btn-ghost" href="preise.html">Wie läuft’s & Kosten?</a>
+          <a class="btn btn-primary" href="kontakt.html">Jetzt anfragen</a>
+          <a class="btn btn-ghost" href="preise.html">Preise auf Anfrage</a>
         </div>
         <ul class="badges">
-          <li>✅ kurzfristig buchbar</li><li>✅ Fixpreis nach Kurzcheck</li><li>✅ fair & transparent</li><li>✅ Region Hannover</li>
+          <li>✓ kurzfristig buchbar</li>
+          <li>✓ fix & diskret</li>
+          <li>✓ fair & transparent</li>
+          <li>✓ Region Hannover</li>
         </ul>
       </div>
     </section>
@@ -109,6 +112,9 @@
         <article class="card"><h3>Event Clean-Up</h3><p>Vor-/Nachbereitung bei Geburtstag, Vereins-, Schul- & Abschluss-Events.</p></article>
         <article class="card"><h3>Optional</h3><p>Pfandlogistik, Geruchsreduktion, Außenbereich/Terrasse, Grill & Müllabfuhr.</p></article>
       </div>
+      <div class="cta-center">
+        <a class="btn btn-primary" href="kontakt.html">Termin anfragen</a>
+      </div>
     </section>
 
     <section class="container">
@@ -117,16 +123,6 @@
         <article class="card"><strong>1. Anfrage</strong><p>Kurz: Datum, Ort, Räume/Fläche.</p></article>
         <article class="card"><strong>2. Kurzcheck</strong><p>Rückfrage & verbindlicher Fixpreis.</p></article>
         <article class="card"><strong>3. Clean-Up</strong><p>Wir kommen, räumen, reinigen. Fertig.</p></article>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="cards">
-        <article class="card" style="text-align:center">
-          <h3>Bereit, aufzuräumen?</h3>
-          <p>Schick uns 3 Infos (Datum, Ort, Umfang) – wir melden uns zügig mit einem Fixpreis.</p>
-          <p><a class="btn btn-primary" href="kontakt.html">Unverbindlich anfragen</a></p>
-        </article>
       </div>
     </section>
   </main>
