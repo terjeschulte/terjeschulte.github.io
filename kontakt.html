@@ -6,9 +6,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0c1218;--card:#121a24;--text:#e7eef7;--muted:#a9b7c6;--primary:#39ff88;--primary-10:#39ff881a;--ring:#39ff88}
+    :root{--bg:#0b0f14;--card:#121820;--text:#e7eef7;--muted:#a9b7c6;--primary:#39ff88;--primary-10:#39ff881a;--ring:#39ff88}
     *{box-sizing:border-box} html,body{margin:0;padding:0}
-    body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto;background:linear-gradient(180deg,#0c1218 0%, #0f1822 100%);color:var(--text);line-height:1.6}
+    body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto;background:linear-gradient(180deg,#0b0f14 0%, #0e141b 100%);color:var(--text);line-height:1.6}
     .container{width:min(1100px,92%);margin-inline:auto}
     .site-header{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:14px 4%;background:#0b0f14cc;border-bottom:1px solid #111722}
     .logo{display:flex;align-items:center;gap:.6rem;font-weight:600}.logo svg{width:28px;height:28px}.logo strong{color:var(--primary)}
@@ -16,12 +16,12 @@
     .contact-grid{display:grid;gap:18px;grid-template-columns:1fr 1fr} @media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
     .contact-card{background:var(--card);border:1px solid #1a2230;border-radius:16px;padding:20px}
     label{display:block;margin:10px 0 6px;font-weight:600}
-    input,textarea,select{width:100%;border:1px solid #263444;background:#0e141b;color:#e7eef7;border-radius:10px;padding:10px 12px;outline:none}
-    input:focus,textarea:focus,select:focus{border-color:var(--ring);box-shadow:0 0 0 3px var(--primary-10)}
+    input,textarea{width:100%;border:1px solid #263444;background:#0e141b;color:#e7eef7;border-radius:10px;padding:10px 12px;outline:none}
+    input:focus,textarea:focus{border-color:var(--ring);box-shadow:0 0 0 3px var(--primary-10)}
     .btn{display:inline-block;padding:12px 18px;border-radius:12px;border:1px solid #1f2a36;font-weight:600}
     .btn-primary{background:#39ff88;color:#0b0f14;border:0}
     .site-footer{border-top:1px solid #111722;padding:28px 4%;text-align:center;color:#a9b7c6}
-    .foot-links{margin-top:6px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+    .foot-links{margin-top:6px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
   </style>
   <script>document.addEventListener('DOMContentLoaded',()=>{var y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear()});</script>
 </head>
@@ -49,23 +49,16 @@
         <p><strong>E-Mail:</strong> <a href="mailto:hangover-heroes@web.de">hangover-heroes@web.de</a></p>
         <p><strong>Instagram:</strong> <a href="https://instagram.com/han.goverheroes" target="_blank" rel="noopener">@han.goverheroes</a></p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
-          <a class="btn btn-primary" href="mailto:hangover-heroes@web.de?subject=Anfrage Clean-Up&body=Datum:%0AOrt:%0AR\u00e4ume/Umfang:%0AWie erreichen wir dich (Mail/IG)?:%0A">E-Mail senden</a>
+          <a class="btn btn-primary" href="mailto:hangover-heroes@web.de?subject=Anfrage Clean-Up&body=Datum:%0AOrt:%0AR\u00e4ume/Umfang:%0A">E-Mail senden</a>
           <a class="btn" href="https://instagram.com/han.goverheroes" target="_blank" rel="noopener">Instagram öffnen</a>
         </div>
       </div>
 
-      <!-- Formspree (ID später ersetzen) -->
+      <!-- Formspree: Ersetze 'your-id' durch deine echte ID (z. B. f/mwkjedba) -->
       <form class="contact-card" action="https://formspree.io/f/your-id" method="POST">
         <h3>Kurzformular</h3>
         <label>Dein Name<input name="name" required></label>
-        <label>E-Mail<input name="email" type="email" required></label>
-        <label>Antwort gewünscht per
-          <select name="reply_via">
-            <option>E-Mail</option>
-            <option>Instagram</option>
-          </select>
-        </label>
-        <label>Instagram-Handle (optional)<input name="ig" placeholder="@han.goverheroes"></label>
+        <label>Deine E-Mail<input name="email" type="email" required></label>
         <label>Datum/Ort der Feier<input name="event" placeholder="z. B. 22.11., Linden"></label>
         <label>Nachricht<textarea name="message" rows="5" placeholder="Kurz Umfang, Räume, Wunschzeit…"></textarea></label>
         <button class="btn btn-primary" type="submit">Abschicken</button>
