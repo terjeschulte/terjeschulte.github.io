@@ -54,8 +54,13 @@
         </div>
       </div>
 
-      <!-- Formspree: Ersetze 'your-id' durch deine echte ID (z. B. f/mwkjedba) -->
-      <form class="contact-card" action="https://formspree.io/f/your-id" method="POST">
+      <!-- Formsubmit.io: sendet ohne Account direkt an deine Mailadresse -->
+      <form class="contact-card" action="https://formsubmit.io/send/hangover-heroes@web.de" method="POST">
+        <!-- Weiterleitung nach erfolgreichem Versand -->
+        <input type="hidden" name="_redirect" value="https://terjeschulte.github.io/kontakt.html">
+        <!-- Honeypot-Spamschutz -->
+        <input type="text" name="_formsubmit_id" style="display:none">
+
         <h3>Kurzformular</h3>
         <label>Dein Name<input name="name" required></label>
         <label>Deine E-Mail<input name="email" type="email" required></label>
